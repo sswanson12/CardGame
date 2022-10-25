@@ -8,9 +8,11 @@ namespace CardGame.edu.wctc.Services
     {
         private readonly IDealer _dealer;
         private readonly IList<IPlayer> _players;
+        private readonly HandFactory _handFactory;
 
         public GameService(IDealer dealer, IList<IPlayer> players)
         {
+            _handFactory = new HandFactory();
             _dealer = dealer;
             _players = players;
         }
@@ -30,7 +32,7 @@ namespace CardGame.edu.wctc.Services
             {
                 //I was doing the dependency injection before I realized I don't know how to do this without the "new"s
                 //quite yet!
-                _players.Add(new Player(new Hand(new List<ICard>())));
+                _players.Add(new Player(_handFactory.CreateHand()));
             }
 
             foreach (var player in _players)
@@ -38,6 +40,14 @@ namespace CardGame.edu.wctc.Services
                 _dealer.DealHand(player.GetHand());
                 Console.WriteLine($"Player {_players.IndexOf(player) + 1}:\n" +
                                   $"{player.ShowHand()}");
+            }
+        }
+
+        private class HandFactory
+        {
+            public IHand CreateHand()
+            {
+                return new Hand(new List<ICard>());
             }
         }
     }
