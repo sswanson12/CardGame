@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mg5gW1I3HVOpicc7cy/q/NmSFLUzK/dpJY2TpDsdIEaBSJmBqio8fhQSThE09vq/2JHlTWJENRIfep/RNdAXmQ==",
+  "success": true,
+  "projectFilePath": "D:\\WCTC\\Software Architecture\\CardGame\\CardGame\\CardGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samsw\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\samsw\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\samsw\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\samsw\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
